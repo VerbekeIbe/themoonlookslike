@@ -659,6 +659,32 @@ display: inline;
 #UTILITIES
 \*------------------------------------*/
 
+/* Moon utilities */
+
+.u-cookie {
+color: #935C00;
+}
+
+.u-briefcase {
+  color:#FFFA60;
+}
+
+.u-melon {
+  color: #FF6565;
+}
+
+.u-smile {
+  color: #FFFF6F;
+}
+
+.u-calzone{
+  color: #F80909;
+}
+
+
+
+
+
 /*
     Utilities: color
     ---

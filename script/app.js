@@ -81,45 +81,35 @@ const nameMoon = (moonphase) => {
         console.log("Dit Werkt")
         prefix.innerHTML = `It's`;
         moonname.innerHTML = `on vacay`;
+        moonname.classList.add('u-briefcase');
         
         
         } else if(moonphase == 'Waxing Crescent' || moonphase == 'Waning Crescent'){
             prefix.innerHTML = `A`;
             moonname.innerHTML = `calzone`;
+            moonname.classList.add('u-calzone');
         
         } else if(moonphase == 'First Quarter' || moonphase == 'Last Quarter'){
             prefix.innerHTML = `A`;
             moonname.innerHTML = `slice O' melon`;
+            moonname.classList.add('u-melon');
         
         } else if(moonphase == 'Waxing Gibbous' || moonphase == 'Waning Gibbous') {
             prefix.innerHTML = `A`;
             moonname.innerHTML = `bright smile`;
+            moonname.classList.add('u-smile');
         
         } else if(moonphase == 'Full Moon') {
             prefix.innerHTML = `A`;
             moonname.innerHTML = `cookie`;
+            moonname.classList.add('u-cookie');
         
         } else {
             console.log("Error");
         };
 
+};
 
-
-
-}
-
-
-
-
-//#endregion
-
-//#region ***  Callback-No Visualisation - callback___  ***
-
-//#endregion
-
-//#region ***  Data Access - get___ ***
-
-//#endregion
 
 //#region ***  Event Listeners - listenTo___ ***
 
