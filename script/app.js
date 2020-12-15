@@ -78,7 +78,6 @@ const nameMoon = (moonphase) => {
     moonname = document.querySelector('.js-moonname')
 
     if(moonphase == 'New Moon'){
-        console.log("Dit Werkt")
         prefix.innerHTML = `It's`;
         moonname.innerHTML = `on vacay`;
         moonname.classList.add('u-briefcase');
@@ -114,8 +113,9 @@ const nameMoon = (moonphase) => {
 //#region ***  Event Listeners - listenTo___ ***
 
 function handleButton(){
-let next = 'c-next-moon'
+    let next = 'c-next-moon';
     button = document.querySelector('.js-button');
+
 
     button.addEventListener('click', function(){
     if(button.classList.contains(next)) {
@@ -147,21 +147,20 @@ let getAPI = async () => {
     var yyyy = today.getFullYear();
     
     today = yyyy + '-' + mm + '-' + dd;
-    console.log(today);
+
 
 const ENDPOINT = `https://api.weatherapi.com/v1/astronomy.json?key=383178b5b4a3485eb5e195832201412&q=Kortrijk&dt=${today}`;
 
 const request = await fetch(`${ENDPOINT}`);
 	const data = await request.json();
-	console.log(data)
 
     let moonphase = data.astronomy.astro.moon_phase
-    console.log(moonphase);
 
 
     showMoon(moonphase, today);
     showDate(yyyy,mm,dd);
     nameMoon(moonphase);
+
 };
 
 
@@ -174,5 +173,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	// 1
     getAPI();
     handleButton();
-    console.log("Dom is geladen.")
+    console.log("DOM LOAD COMPLETE")
 });
