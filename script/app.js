@@ -5,14 +5,49 @@
 //#endregion
 
 //#region ***  Callback-Visualisation - show___ ***
-const showMoon = (moonphase, today) => {
+const showMoon = (moonphase) => {
 const moonphaseinfo = document.querySelector('.js-moonphase'),
-moondate = document.querySelector('.js-moondate'),
-moon = document.querySelector('.js-moon')
+moon = document.querySelector('.js-moon');
 
+moonphaseinfo.innerHTML = moonphase;
+
+
+
+if(moonphase == 'New Moon'){
+console.log("Dit Werkt")
+
+
+} else if(moonphase == 'Waxing Crescent' || moonphase == 'Waning Crescent'){
+
+    moon.innerHTML = ``;
+
+} else if(moonphase == 'First Quarter' || moonphase == 'Last Quarter'){
+
+    moon.innerHTML = ``;
+
+} else if(moonphase == 'Waxing Gibbous' || moonphase == 'Waning Gibbous') {
+
+    moon.innerHTML = ``;
+
+} else if(moonphase == 'Full Moon') {
+
+    moon.innerHTML = ``;
+
+} else {
+    console.log("Error");
+};
 
 
 };
+
+
+const showDate = (today) => {
+  const  moondate = document.querySelector('.js-moondate');
+  moondate.innerHTML = today;
+};
+
+
+
 
 //#endregion
 
@@ -49,7 +84,7 @@ const request = await fetch(`${ENDPOINT}`);
     console.log(moonphase)
     
     showMoon(moonphase, today);
-
+    showDate(today);
 };
 
 
