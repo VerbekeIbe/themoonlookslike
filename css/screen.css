@@ -226,7 +226,7 @@ a:focus {
 
 .o-row {
   position: relative;
-  padding: 24px 24px 0;
+  padding-top: 5rem;
 }
 
 .o-row--login {
@@ -236,7 +236,7 @@ a:focus {
 /* size modifiers */
 
 .o-row--lg {
-  padding-top: 48px;
+ 
   padding-bottom: 24px;
 }
 
@@ -477,6 +477,18 @@ a:focus {
 .c-background {
   background-image: url("../img/png/stary_sky.png");
   background-repeat: repeat-y  repeat-x;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  
+
+  margin-top: none;
+
+  border: solid;
+  border-width: var(--global-border-width);
+  border-color: var(--global-color-alpha-light);
+  border-radius: var(--global-border-radius);
+
+  
 }
 
 
@@ -488,23 +500,36 @@ a:focus {
 */
 
 .c-header {
+  background-color: var(--global-color-neutral-dark);
   margin-bottom: 2rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 
 .c-moon_text {
-  margin-bottom: 1rem;
+  background-color: var(--global-color-neutral-dark);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .c-moon {
+  display: block;
   max-width: 8rem ;
-
+  margin: auto;
   margin-bottom: 2rem;
+  background-color: var(--global-color-neutral-dark);
+  
+  
 }
 
 
 .c-info_box {
+  display: block;
+  margin: auto;
+
+  text-align: center;
+
   font-family: inherit;
 
   font-size: .9rem;
@@ -519,7 +544,7 @@ a:focus {
   max-width: 13rem;
   padding: 0.5rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -569,6 +594,8 @@ a:focus {
 
 .c-button {
   display: block;
+  margin: auto;
+
 
 
 
@@ -580,12 +607,9 @@ a:focus {
   border: var(--global-border-width) solid transparent;
   border-radius: var(--global-button-border-radius);
 
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 2rem;
 
   outline: none;
-  
-
-
 
 }
 
