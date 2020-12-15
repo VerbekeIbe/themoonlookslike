@@ -268,7 +268,7 @@ a:focus {
 .o-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 79.5em; /* 79.5 * 16px = 1272 */
+  max-width: 32em; /* 79.5 * 16px = 1272 */
   width: 100%;
 }
 
@@ -491,6 +491,14 @@ a:focus {
   max-width: 175px;
 }
 
+
+.c-info_box {
+  border: solid;
+  border-width: var(--global-border-width);
+  border-color: var(--global-border-color);
+  border-radius: var(--global-border-radius);
+}
+
 /*
     Component: Card
     ---
@@ -536,6 +544,22 @@ a:focus {
 */
 
 .c-button {
+  display: block;
+
+  font-family: inherit;
+
+  background-color: var(--global-color-alpha-light);
+  color: var(--global-color-neutral-dark);
+
+  border: var(--global-border-width) solid transparent;
+  border-radius: var(--global-button-border-radius);
+
+  padding: 1rem 1.5rem;
+
+  
+
+
+
 }
 
 .c-button:hover {
