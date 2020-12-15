@@ -113,6 +113,29 @@ const nameMoon = (moonphase) => {
 
 //#region ***  Event Listeners - listenTo___ ***
 
+function handleButton(){
+let next = 'c-next-moon'
+    button = document.querySelector('.js-button');
+
+    button.addEventListener('click', function(){
+    if(button.classList.contains(next)) {
+        button.classList.remove(next)
+        button.innerHTML = 'Next Moon'
+        getAPI();
+    }
+    else {
+        button.classList.add(next)
+        button.innerHTML = 'Back';
+    }
+    });
+
+
+
+
+};
+
+
+
 //#endregion
 
 let getAPI = async () => {
@@ -150,5 +173,6 @@ const request = await fetch(`${ENDPOINT}`);
 document.addEventListener('DOMContentLoaded', function() {
 	// 1
     getAPI();
+    handleButton();
     console.log("Dom is geladen.")
 });
