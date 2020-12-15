@@ -35,12 +35,17 @@
   --global-color-neutral-light: #f2f3f9;
   --global-color-neutral-dark: #080e21;
 
+
+  --global-color-alpha-dark: #778CFF;
   --global-color-alpha-light: #9dacff;
   --global-color-yellow: #fbf49b;
 
   /* fonts  */
 
   /* shadows */
+
+  --global-box-shadow: 0 0 8px 2px rgba(157, 172, 255, 0.3);
+
 
   /* borders  */
 
@@ -474,7 +479,7 @@ a:focus {
     Website main background
 */
 
-.c-background {
+.c-box{
   background-image: url("../img/png/stary_sky.png");
   background-repeat: repeat-y  repeat-x;
   padding-top: 2rem;
@@ -487,6 +492,9 @@ a:focus {
   border-width: var(--global-border-width);
   border-color: var(--global-color-alpha-light);
   border-radius: var(--global-border-radius);
+
+  box-shadow: var(--global-box-shadow);
+
 
   
 }
@@ -512,6 +520,12 @@ a:focus {
   background-color: var(--global-color-neutral-dark);
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.u-align {
+margin: 0;
+display: inline;
+
 }
 
 .c-moon {
@@ -616,15 +630,13 @@ a:focus {
 }
 
 .c-button:hover {
+  background-color: var(--global-color-alpha-dark);
 }
 
-.c-button:focus {
-}
-
+.c-button:focus
 .c-button:active {
-}
-
-.c-button--block {
+  outline: none;
+  box-shadow: var(--global-box-shadow);
 }
 
 /*------------------------------------*\
@@ -678,6 +690,10 @@ a:focus {
 .u-mb-xl {
   margin-bottom: 48px !important;
 }
+
+
+
+
 
 /*
     Utilities: max-width
