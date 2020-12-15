@@ -2,6 +2,30 @@
 #FONTS
 \*------------------------------------*/
 
+  /* font  */
+
+  @font-face {
+  font-family: 'OCR-A';
+  font-weight: 400;
+  src: url('../fonts/OCR-A.ttf');
+  }
+
+
+
+  /* fallback */
+
+@font-face {
+  font-family: 'DS-DIGI';
+  font-weight: 400;
+  src: url('../fonts/DS-DIGI.TTF');
+  }
+
+
+
+
+
+
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -36,7 +60,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "OCR A", Helvetica, arial, sans-serif;
+  font-family: "OCR A","OCR-A", "DS-DIGI", Helvetica, arial, sans-serif;
   color: var(--global-color-neutral-light);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
