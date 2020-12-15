@@ -89,14 +89,14 @@ html {
 */
 
 ::-moz-selection {
-  background: HotPink;
-  color: white;
+  background: var(--global-color-neutral-light);
+  color: var(--global-color-neutral-dark);
   text-shadow: none;
 }
 
 ::selection {
-  background: HotPink;
-  color: white;
+  background: var(--global-color-neutral-light);
+  color: var(--global-color-neutral-dark);
   text-shadow: none;
 }
 
@@ -467,6 +467,19 @@ a:focus {
 /*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
+
+/*
+    Component: Main
+    ---
+    Website main background
+*/
+
+.c-main {
+  background-image: url("img\png\stary_sky.png");
+  background-repeat: repeat-y, repeat-x;
+}
+
+
 
 /*
     Component: Logo
