@@ -231,7 +231,7 @@ a:focus {
 
 .o-row {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .o-row--login {
@@ -529,13 +529,13 @@ display: inline;
 }
 
 .c-moon {
+  padding-top: 0.5rem;
   display: block;
   max-width: 8rem ;
   margin: auto;
   margin-bottom: 2rem;
   background-color: var(--global-color-neutral-dark);
-  transition: transform 1s ease-in;
-  animation: slight-hover infinite 2.5s backwards ease-in-out;
+  animation: slight-hover infinite 2.5s forwards ease-in-out;
 }
 
 @keyframes slight-hover {
