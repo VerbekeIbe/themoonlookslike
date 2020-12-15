@@ -534,8 +534,22 @@ display: inline;
   margin: auto;
   margin-bottom: 2rem;
   background-color: var(--global-color-neutral-dark);
-  
-  
+  transition: transform 1s ease-in;
+  animation: slight-hover infinite 2.5s backwards ease-in-out;
+}
+
+@keyframes slight-hover {
+  0% {
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(3%);
+
+  }
+  100% {
+    transform: translateY(0%);
+  }
+
 }
 
 
