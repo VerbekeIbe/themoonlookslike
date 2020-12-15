@@ -275,6 +275,7 @@ a:focus {
   margin-right: auto;
   max-width: 21rem; /* 79.5 * 16px = 1272 */
   width: 100%;
+  min-height: 40rem;
 }
 
 /*
@@ -529,7 +530,7 @@ display: inline;
 }
 
 .c-moon {
-  min-height: 9rem;
+  min-height: 12.5rem;
   
   padding-top: 0.5rem;
   display: block;
