@@ -1,5 +1,3 @@
-"use strict";
-
 //#region ***  DOM references ***
 
 //#endregion
@@ -37,13 +35,41 @@ moon.innerHTML = `<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org
     console.log("Error");
 };
 
-
 };
 
 
-const showDate = (today) => {
+const showDate = (yyyy,mm,dd) => {
   const  moondate = document.querySelector('.js-moondate');
-  moondate.innerHTML = today;
+    let month = '';
+
+if(mm == 01){
+    month = 'January'
+} else if(mm == 02){
+    month = 'February'
+} else if(mm == 03){
+    month = 'March'
+} else if(mm == 04){
+    month = 'April'
+} else if(mm == 05){
+    month = 'May'
+} else if(mm == 06){
+    month = 'June'
+} else if(mm == 07){
+    month = 'July'
+} else if(mm == 08){
+    month = 'August'
+} else if(mm == 09){
+    month = 'September'
+} else if(mm == 10){
+    month = 'October'
+} else if(mm == 11){
+    month = 'November'
+} else if(mm == 12){
+    month = 'December'
+};
+
+
+  moondate.innerHTML = month + ' ' + dd + ' - ' + yyyy;
 };
 
 
@@ -121,7 +147,7 @@ const request = await fetch(`${ENDPOINT}`);
 
 
     showMoon(moonphase, today);
-    showDate(today);
+    showDate(yyyy,mm,dd);
     nameMoon(moonphase);
 };
 
