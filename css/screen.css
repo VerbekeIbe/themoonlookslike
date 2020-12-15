@@ -502,12 +502,13 @@ a:focus {
 .c-header {
   background-color: var(--global-color-neutral-dark);
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 
 .c-moon_text {
+  font-size: 1.2rem;
   background-color: var(--global-color-neutral-dark);
   margin-bottom: 2rem;
   text-align: center;
@@ -600,6 +601,7 @@ a:focus {
 
 
   font-family: inherit;
+  font-size: 1.1rem;
 
   background-color: var(--global-color-alpha-light);
   color: var(--global-color-neutral-dark);
