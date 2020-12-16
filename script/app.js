@@ -116,7 +116,7 @@ let handleButton = async () => {
     let next = 'c-next-moon';
     button = document.querySelector('.js-button');
     const moonphaseinfo = document.querySelector('.js-moonphase'),
-    moon = document.querySelector('.js-moon');
+    moon = document.querySelector('.js-moon'), title = document.querySelector('.js-title');
 
 
 
@@ -143,11 +143,14 @@ let handleButton = async () => {
     if(button.classList.contains(next)) {
         button.classList.remove(next)
         button.innerHTML = 'Next Moon'
+        title.innerHTML = 'The Moon Looks Like:'
         getAPI();
     }
     else {
         button.classList.add(next)
         button.innerHTML = 'Reset';
+        title.innerHTML = 'The Moon Will Look Like:'
+
 
         //volgende maan weergeven
 
