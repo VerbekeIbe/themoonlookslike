@@ -538,6 +538,7 @@ display: inline;
   margin: auto;
   margin-bottom: 2rem;
   background-color: var(--global-color-neutral-dark);
+  
   animation: slight-hover infinite 2.5s forwards ease-in-out;
 
 }
